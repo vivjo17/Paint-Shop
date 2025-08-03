@@ -2,14 +2,14 @@
   font-family: 'Playfair Display';
   src: url('Fonts/Playfair') format('.ttf');
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background: #212226; /* Dark moody base */
-  color: #c5c3c4; /* Soft light-gray text */
+  background: #101023; /* Dark moody base */
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
 }
@@ -20,36 +20,45 @@ header .header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #445a4d; /* Subtle earthy contrast */
+  border-bottom: 1px solid #6c71c4; /* Subtle earthy contrast */
 }
 header h1 {
   font-size: 2rem;
-  color: #e86726; /* Warm accent color */
+  color: #264c57;
+  /* Warm accent color */
 }
 header nav a {
   margin-left: 1.5rem;
   text-decoration: none;
-  color: #c5c3c4;
+  color: #6c71c4;
   border-bottom: 2px solid transparent;
   transition: color 0.3s, border-color 0.3s;
 }
 header nav a:hover {
-  color: #e86726;
-  border-color: #e86726;
+  color: #561a43;
+  border-color: #561a43;
 }
 
 /* Hero section */
+
 .hero {
+  position: relative;
+  overflow: hidden;
+  max-width: 650px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
   text-align: center;
-  padding: 6rem 2rem;
+  box-sizing: border-box;
 }
+
 .hero h2 {
-  font-size: 3rem;
-  color: #b14b34;
+  font-size: 45px;
+  color: #430d4b;
 }
 .hero p {
   font-size: 1.2rem;
-  color: #779e7f;
+  color: #6c71c4;
   margin-top: 0.5rem;
 }
 
@@ -62,12 +71,13 @@ header nav a:hover {
 }
 .gallery-item {
   overflow: hidden;
-  border: 2px solid #445a4d;
+  border: 2px solid #6c71c4;
 }
 .gallery-item img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 .gallery-item:hover img {
@@ -78,10 +88,10 @@ header nav a:hover {
 footer {
   text-align: center;
   padding: 2rem;
-  border-top: 1px solid #445a4d;
+  border-top: 1px solid #6c71c4;
 }
 footer p {
-  color: #779e7f;
+  color: #6c71c4;
 }
 
 /* Utility */
