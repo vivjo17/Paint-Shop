@@ -3,7 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Contact- Cosmic Harmonium</title>
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header">
+        <h1>Cosmic Harmonium</h1>
+        <nav>
+          <a href="index.html" target="_blank" rel="noopener">Home</a>
+          <a href="about.html" target="_blank" rel="noopener">About</a>
+          <a href="contact.html" target="_blank" rel="noopener">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero">
+      <h2>Get in Touch With Us</h2>
+      <p>For those that have eyes to see</p>
+    </div>
+
+    <main class="contact-main">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:vivi@example.com">vivi@example.com</a>
+        </p>
+        <p>
+          <strong>Phone:</strong> <a href="tel:+15551234567">(555) 123‑4567</a>
+        </p>
+        <p>
+          <strong>Studio:</strong> Cosmic Harmonium, 123 Harmony Lane, Houston,
+          TX
+        </p>
+        <section class="contact-socials">
+          <h3>And Stay In Touch</h3>
+          <a
+            href="https://instagram.com/YourInstagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/YourChannelID"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube fa-3x" aria-hidden="true"></i>
+          </a>
+        </section>
+      </div>
+
+      <form class="contact-form" method="post" action="#">
+        <fieldset>
+          <legend>Send a Message</legend>
+
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" required />
+
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" required />
+
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" name="subject" required />
+
+          <label for="contact-message">Message</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="6"
+            required
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
 </html>
