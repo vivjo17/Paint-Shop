@@ -84,6 +84,52 @@ header nav a:hover {
   transform: scale(1.05);
 }
 
+/*Artists Page */
+/* Elegant tight grid for “artist” image showcase */
+.gallery-artists {
+  display: grid;
+  /* 3–4 columns depending on viewport */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /*changed*/
+  gap: 1.25rem; /*changed*/
+  padding: 2rem 1rem; /*changed*/
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item-artists {
+  /* keeps images in perfect squares (or 4:5, etc.) */
+  aspect-ratio: var(--ar, 4/3); /*changed*/
+  overflow: hidden;
+  border-radius: 6px; /*changed*/
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item-artists:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.16); /*changed*/
+}
+
+.gallery-item-artists img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery-item-artists.contain img {
+  object-fit: contain;
+}
+
+/* Optional: mobile adjustments */
+@media (max-width: 600px) {
+  .gallery-artists {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /*changed*/
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}
+
 /* Footer */
 footer {
   text-align: center;
