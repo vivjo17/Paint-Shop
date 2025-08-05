@@ -2,6 +2,7 @@
   font-family: 'Playfair Display';
   src: url('Fonts/Playfair') format('.ttf');
 }
+/*@font-face is not working */
 
 * {
   margin: 0;
@@ -34,6 +35,7 @@ header nav a {
   border-bottom: 2px solid transparent;
   transition: color 0.3s, border-color 0.3s;
 }
+
 header nav a:hover {
   color: #561a43;
   border-color: #561a43;
@@ -50,6 +52,7 @@ header nav a:hover {
   padding: 0 1rem;
   text-align: center;
   box-sizing: border-box;
+  padding-bottom: 50px;
 }
 
 .hero h2 {
@@ -139,10 +142,6 @@ header nav a:hover {
   font-size: 1.1rem;
 }
 /*Contacts Page */
-.hero.contact-hero {
-  margin-top: 2rem;
-  text-align: center;
-}
 
 .contact-main {
   display: grid;
@@ -153,18 +152,16 @@ header nav a:hover {
   padding: 0 1rem;
 }
 
-.contact-info {
-  background: #18182d;
-  padding: 1.5rem;
-  border: 2px solid #6c71c4;
+.contact-header-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
   border-radius: 6px;
-  color: #6c71c4;
-  font-size: 1rem;
 }
 
-.contact-info a {
-  color: #cba6f7;
-  text-decoration: none;
+.contact-form {
+  grid-column: 1/ -1;
 }
 
 .contact-form fieldset {
@@ -214,7 +211,22 @@ header nav a:hover {
   background: #561a43;
 }
 
-/* Footer */
+.contact-socials {
+  text-align: center;
+  margin-top: 2rem;
+  color: #6c71c4;
+}
+
+.contact-socials a {
+  margin: 0 1rem;
+  color: #cba6f7;
+  transition: transform0.2s;
+}
+
+.contact-socials a:hover {
+  transform: scale(1.2);
+}
+
 footer {
   text-align: center;
   padding: 2rem;
@@ -224,7 +236,6 @@ footer p {
   color: #6c71c4;
 }
 
-/* Utility */
 .hidden {
   display: none;
 }
