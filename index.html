@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmic Harmonium</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -18,25 +24,58 @@
       </div>
     </header>
 
-    <div class="hero">
-      <h2>The Artists Way</h2>
+    <div class="artist">
       <p>For those that have eyes to see, let them see</p>
       <p>- Mary Magdalene</p>
     </div>
 
     <main class="gallery">
       <div class="gallery-item">
-        <a href="Javisart.html" target="_blank" rel="noopener">
-          <img src="images/j 1.JPG" alt="Javi's Art 1" />
-        </a>
+        <div class="img-wrapper">
+          <img class="javi-img" src="images/j 1.JPG" alt="Javi's Art 1" />
+        </div>
+        <div class="button-wrapper">
+          <a
+            href="Javisart.html"
+            class="collection-button"
+            target="_blank"
+            rel="noopener"
+          >
+            Javi's Collection
+          </a>
+        </div>
       </div>
+
       <div class="gallery-item">
-        <a href="Laurasart.html" target="_blank" rel="noopener">
-          <img src="images/l1.jpg" alt="Laura's Art 1 " />
-        </a>
+        <div class="img-wrapper">
+          <img class="fit-img" src="images/l7.jpg" alt="Laura's Art 1 " />
+        </div>
+        <div class="button-wrapper">
+          <a
+            href="Laurasart.html"
+            class="collection-button"
+            target="_blank"
+            rel="noopener"
+          >
+            Laura's Collections
+          </a>
+        </div>
       </div>
+
       <div class="gallery-item">
-        <img src="images/v1.jpg" alt="Vivian's Art 3" />
+        <div class="img-wrapper">
+          <img class="fit-img" src="images/v1.jpg" alt="Vivian's Art 3" />
+        </div>
+        <div class="button-wrapper">
+          <a
+            href="Viviansart.html"
+            class="collection-button"
+            target="_blank"
+            rel="noopener"
+          >
+            Vivian's Collection</a
+          >
+        </div>
       </div>
     </main>
 
