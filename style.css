@@ -338,3 +338,109 @@ footer p {
 .hidden {
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+  /* Header */
+  header .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  header nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+  }
+  /* Artist Section */
+  .artist {
+    max-width: 90%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  .artist h2 {
+    font-size: 35px;
+  }
+  .artist p {
+    font-size: 1.25rem;
+  }
+  /* Paragraph Section */
+  .paragraph {
+    flex-direction: column;
+    padding: 20px 20px 15px;
+  }
+  .home-img {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+  /* Gallery */
+  .gallery {
+    padding: 30px 20px;
+    gap: 1rem;
+  }
+  .gallery-item {
+    height: 400px;
+  }
+  .img-wrapper {
+    height: 400px;
+  }
+  /* Button */
+  .collection-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  /* Gallery Artists */
+  .gallery-artists {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    padding: 1rem;
+    gap: 1rem;
+  }
+  /* Contacts */
+  .contact-main {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+  .contact-header-image {
+    max-height: 150px;
+  }
+  .contact-form fieldset {
+    padding: 1rem;
+  }
+  /* Footer */
+  footer {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header nav a {
+    font-size: 0.85rem;
+  }
+  .artist h2 {
+    font-size: 28px;
+  }
+  .artist p {
+    font-size: 1.1rem;
+  }
+  .paragraph {
+    padding: 15px 10px 10px;
+  }
+  .gallery-item {
+    height: 300px;
+  }
+  .img-wrapper {
+    height: 300px;
+  }
+  .collection-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
