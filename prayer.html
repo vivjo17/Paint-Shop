@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer & Intention Wall (Live)</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <style>
+      body {
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>🕯 Live Prayers🕯</h1>
+    <p>
+      Write your prayer, blessing, or intention below. It will appear instantly
+      for everyone.
+    </p>
+
+    <textarea id="prayerInput" placeholder="Type your prayer here..."></textarea
+    ><br />
+    <button id="postPrayer">Light a Candle</button>
+
+    <div class="wall" id="prayerWall"></div>
+
+    <!-- Link to Vite JS module -->
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
